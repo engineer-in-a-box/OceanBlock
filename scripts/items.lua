@@ -74,3 +74,7 @@ items["nuclear-fuel"].fuel_acceleration_multiplier = 3
 items["nuclear-fuel"].fuel_top_speed_multiplier = 1.3
 
 items["coal"].fuel_value = "24MJ"
+
+local lab_2 = table.deepcopy(data.raw["item"]["lab"])
+lab_2.name = "lab-2"
+lab_2.place_result = "lab-2"

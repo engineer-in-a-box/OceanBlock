@@ -499,6 +499,20 @@ data:extend({
         },
         energy_required = 8,
         category = "chemistry"
+    },
+    {
+        type = "recipe",
+        name = "lab-2",
+        ingredients = {
+            {type = "item", name = "lab", amount = 2},
+            {type = "item", name = "titanium-plate", amount = 20},
+            {type = "item", name = "advanced-circuit", amount = 20},
+            {type = "item", name = "iron-gear-wheel", amount = 20},
+            {type = "fluid", name = "nitric-acid", amount = 50}
+        },
+        results = {
+            {type = "item", name = "lab-2", amount = 1}
+        }
     }
 })
 
