@@ -479,7 +479,7 @@ data:extend({
         type = "recipe",
         name = "titanium-plate",
         ingredients = {
-            {type = "item", name = "titanium-ore", amount = 3}
+            {type = "item", name = "titanium-powder", amount = 5}
         },
         results = {
             {type = "item", name = "titanium-plate", amount = 2}
@@ -497,7 +497,7 @@ data:extend({
         results = {
             {type = "item", name = "titanium-powder", amount = 5}
         },
-        energy_required = 4,
+        energy_required = 8,
         category = "chemistry"
     }
 })
