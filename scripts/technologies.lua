@@ -213,4 +213,5 @@ data:extend({
             "chemical-science-pack",
             "advanced-material-processing"
         }
+    }
 })
