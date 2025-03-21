@@ -12,7 +12,7 @@ data.raw["furnace"]["flare-stack"].crafting_speed = 10
 -- autoplace
 data.raw["tile"]["water"].autoplace = {
     probability_expression = "1",
-    order = "zzzzzz"
+    order = "zzzzz"
 }
 -- data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls = {
 --     ["water"] = {}

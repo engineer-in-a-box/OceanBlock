@@ -31,6 +31,20 @@ data:extend({
         icon = "__oceanblock__/graphics/icons/advanced-processing-unit.png",
         subgroup = "intermediate-product",
         order = "bd"
+    },
+    {
+        type = "item",
+        name = "titanium-ore",
+        stack_size = 50,
+        icon = "__oceanblock__/graphics/icons/titanium-ore.png",
+        pictures = {
+            {size = 64, filename = "__oceanblock__/graphics/icons/titanium-ore.png", scale = 0.5},
+            {size = 64, filename = "__oceanblock__/graphics/icons/titanium-ore-2.png", scale = 0.5},
+            {size = 64, filename = "__oceanblock__/graphics/icons/titanium-ore-3.png", scale = 0.5},
+            {size = 64, filename = "__oceanblock__/graphics/icons/titanium-ore-4.png", scale = 0.5}
+        },
+        subgroup = "raw-resource",
+        order = "h[titanium-ore]"
     }
 })
 
