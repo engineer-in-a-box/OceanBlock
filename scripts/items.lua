@@ -10,7 +10,7 @@ data:extend({
             {size = 64, filename = "__Krastorio2Assets__/icons/items/sand-2.png", scale = 0.5}
         },
         subgroup = "raw-material",
-        order = "ad"
+        order = "b[powder]-a[sand]"
     },
     {
         type = "item",
@@ -52,7 +52,15 @@ data:extend({
         stack_size = 200,
         icon = "__oceanblock__/graphics/icons/titanium-powder.png",
         subgroup = "raw-material",
-        order = "ae"
+        order = "b[powder]-b[titanium-powder]"
+    },
+    {
+        type = "item",
+        name = "titanium-plate",
+        stack_size = 200,
+        icon = "__oceanblock__/graphics/icons/titanium-plate.png",
+        subgroup = "raw-material",
+        order = "a[smelting]-d[titanium-plate]"
     }
 })
 
