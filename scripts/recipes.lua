@@ -491,7 +491,7 @@ data:extend({
         type = "recipe",
         name = "titanium-powder",
         ingredients = {
-            {type = "item", name = "titanium-ore", amount = 5},
+            {type = "item", name = "titanium-ore", amount = 3},
             {type = "fluid", name = "nitric-acid", amount = 1}
         },
         results = {
