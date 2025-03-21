@@ -611,8 +611,7 @@ recipes["speed-module-2"].ingredients = {
 
 recipes["speed-module-3"].ingredients = {
     {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "processing-unit", amount = 5},
-    {type = "item", name = "advanced-processing-unit", amount = 1},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
     {type = "item", name = "speed-module-2", amount = 5},
     {type = "item", name = "flying-robot-frame", amount = 2},
     {type = "fluid", name = "nitric-acid", amount = 40}
@@ -633,8 +632,7 @@ recipes["efficiency-module-2"].ingredients = {
 
 recipes["efficiency-module-3"].ingredients = {
     {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "processing-unit", amount = 5},
-    {type = "item", name = "advanced-processing-unit", amount = 1},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
     {type = "item", name = "efficiency-module-2", amount = 5},
     {type = "item", name = "uranium-238", amount = 1},
     {type = "fluid", name = "nitric-acid", amount = 40}
@@ -655,10 +653,9 @@ recipes["productivity-module-2"].ingredients = {
 
 recipes["productivity-module-3"].ingredients = {
     {type = "item", name = "advanced-circuit", amount = 5},
-    {type = "item", name = "processing-unit", amount = 5},
-    {type = "item", name = "advanced-processing-unit", amount = 1},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
     {type = "item", name = "productivity-module-2", amount = 5},
-    {type = "item", name = "heat-pipe", amount = 5},
+    {type = "item", name = "heat-pipe", amount = 2},
     {type = "fluid", name = "nitric-acid", amount = 40}
 }
 
