@@ -54,7 +54,7 @@ data.raw["generator"]["steam-engine"].fluid_usage_per_tick = 1.5
 data.raw["underground-belt"]["express-underground-belt"].max_distance = 11
 
 local lab_2 = table.deepcopy(data.raw["lab"]["lab"])
-lab_2.name = "lab-2",
+lab_2.name = "lab-2"
 lab_2.minable.result = "lab-2"
 
 data.raw["lab"]["lab"].inputs = {
