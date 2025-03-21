@@ -45,6 +45,14 @@ data:extend({
         },
         subgroup = "raw-resource",
         order = "h[titanium-ore]"
+    },
+    {
+        type = "item",
+        name = "titanium-powder",
+        stack_size = 200,
+        icon = "__oceanblock__/graphics/icons/titanium-powder.png",
+        subgroup = "raw-material",
+        order = "ae"
     }
 })
 
