@@ -32,6 +32,7 @@ table.insert(technologies["uranium-processing"].effects, {type = "unlock-recipe"
 table.insert(technologies["uranium-processing"].effects, {type = "unlock-recipe", recipe = "sand-centrifuging"})
 table.insert(technologies["uranium-processing"].effects, {type = "unlock-recipe", recipe = "uranium-hexasulfide"})
 technologies["uranium-processing"].prerequisites = table.deepcopy(data.raw["technology"]["uranium-mining"].prerequisites)
+table.insert(technologies["uranium-processing"].prerequisites, "titanium-processing")
 
 technologies["uranium-mining"].hidden = true
 

@@ -459,7 +459,7 @@ data:extend({
             {type = "item", name = "processing-unit", amount = 6},
             {type = "item", name = "copper-cable", amount = 20},
             {type = "item", name = "plastic-bar", amount = 10},
-            {type = "item", name = "battery", amount = 2},
+            {type = "item", name = "titanium-plate", amount = 2},
             {type = "fluid", name = "sulfuric-acid", amount = 30},
             {type = "fluid", name = "nitric-acid", amount = 60}
         },
@@ -482,9 +482,9 @@ data:extend({
             {type = "item", name = "titanium-powder", amount = 5}
         },
         results = {
-            {type = "item", name = "titanium-plate", amount = 2}
+            {type = "item", name = "titanium-plate", amount = 1}
         },
-        energy_required = 9.6,
+        energy_required = 16,
         category = "smelting"
     },
     {
@@ -558,7 +558,7 @@ recipes["advanced-circuit"].category = "crafting-with-fluid"
 recipes["advanced-circuit"].energy_required = 1.5
 
 recipes["centrifuge"].ingredients = {
-    {type = "item", name = "steel-plate", amount = 25},
+    {type = "item", name = "titanium-plate", amount = 10},
     {type = "item", name = "iron-gear-wheel", amount = 50},
     {type = "item", name = "advanced-circuit", amount = 50},
     {type = "item", name = "concrete", amount = 50}
