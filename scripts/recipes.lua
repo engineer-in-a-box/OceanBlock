@@ -455,30 +455,23 @@ data:extend({
         type = "recipe",
         name = "advanced-processing-unit",
         ingredients = {
-            {type = "item", name = "iron-plate", amount = 15},
-            {type = "item", name = "electronic-circuit", amount = 60},
-            {type = "item", name = "advanced-circuit", amount = 15},
-            {type = "item", name = "processing-unit", amount = 5},
-            {type = "item", name = "copper-cable", amount = 30},
+            {type = "item", name = "advanced-circuit", amount = 20},
+            {type = "item", name = "processing-unit", amount = 6},
+            {type = "item", name = "copper-cable", amount = 20},
             {type = "item", name = "plastic-bar", amount = 10},
-            {type = "item", name = "battery", amount = 5},
-            {type = "item", name = "uranium-235", amount = 1},
-            {type = "item", name = "efficiency-module-2", amount = 1},
-            {type = "item", name = "speed-module-2", amount = 1},
+            {type = "item", name = "battery", amount = 2},
             {type = "fluid", name = "sulfuric-acid", amount = 30},
             {type = "fluid", name = "nitric-acid", amount = 60}
         },
         results = {
             {type = "item", name = "advanced-processing-unit", amount = 2},
-            {type = "item", name = "uranium-235", amount = 1, probability = 0.75},
-            {type = "fluid", name = "hydrogen", amount = 30},
-            {type = "fluid", name = "uranium-hexasulfide", amount = 10}
+            {type = "fluid", name = "hydrogen", amount = 30, ignored_by_productivity = 30}
         },
         energy_required = 20,
         category = "chemistry",
         main_product = "advanced-processing-unit",
         order = "b[circuits]-d[advanced-processing-unit]",
-        allow_speed = false,
+        allow_productivity = true,
         allow_consumption = false,
         allow_pollution = false
     }
