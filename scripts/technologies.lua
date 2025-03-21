@@ -190,5 +190,26 @@ data:extend({
             "ore-productivity-3"
         },
         max_level = "infinite"
-    }
+    },
+    {
+        type = "technology",
+        name = "titanium-processing",
+        effects = {
+            {type = "unlock-recipe", recipe = "titanium-powder"},
+            {type = "unlock-recipe", recipe = "titanium-plate"}
+        },
+        icon = "__oceanblock__/graphics/icons/titanium-processing.png",
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1}
+            },
+            time = 30,
+            count = 250
+        },
+        prerequisites = {
+            "chemical-science-pack",
+            "advanced-material-processing"
+        }
 })
