@@ -486,6 +486,19 @@ data:extend({
         },
         energy_required = 9.6,
         category = "smelting"
+    },
+    {
+        type = "recipe",
+        name = "titanium-powder",
+        ingredients = {
+            {type = "item", name = "titanium-ore", amount = 5},
+            {type = "fluid", name = "nitric-acid", amount = 1}
+        },
+        results = {
+            {type = "item", name = "titanium-powder", amount = 5}
+        },
+        energy_required = 4,
+        category = "crafting-with-fluid"
     }
 })
 
