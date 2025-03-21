@@ -60,3 +60,5 @@ technologies["mining-productivity-3"].hidden = true
 technologies["mining-productivity-4"].hidden = true
 
 technologies["landfill"].hidden = true
+
+table.insert(technologies["processing-unit"].effects, {type = "unlock-recipe", recipe = "advanced-processing-unit"})
