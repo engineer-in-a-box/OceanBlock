@@ -200,6 +200,7 @@ data:extend({
             {type = "unlock-recipe", recipe = "titanium-plate"}
         },
         icon = "__oceanblock__/graphics/icons/titanium-processing.png",
+        icon_size = 256,
         unit = {
             ingredients = {
                 {"automation-science-pack", 1},
