@@ -512,7 +512,9 @@ data:extend({
         },
         results = {
             {type = "item", name = "lab-2", amount = 1}
-        }
+        },
+        energy_required = 5,
+        category = "crafting-with-fluid"
     }
 })
 
