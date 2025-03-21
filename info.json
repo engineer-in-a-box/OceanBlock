@@ -1,0 +1,17 @@
+{
+    "name": "oceanblock",
+    "version": "1.0.0",
+    "factorio_version": "2.0",
+    "title": "OceanBlock",
+    "author": "engineer-in-a-box",
+    "description": "It's kinda like seablock",
+    "dependencies": [
+        "base >= 2.0.0",
+        "Krastorio2Assets",
+        "Flare Stack",
+        "simply-greenhouse",
+        "centrifuge-tint",
+        "valves",
+        "!space-age"
+    ]
+}
