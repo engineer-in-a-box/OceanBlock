@@ -63,3 +63,5 @@ data.raw["lab"]["lab"].inputs = {
     "military-science-pack",
     "chemical-science-pack"
 }
+
+data:extend({lab_2})
