@@ -469,7 +469,7 @@ data:extend({
             {type = "fluid", name = "nitric-acid", amount = 60}
         },
         results = {
-            {type = "item", name = "advanced-processing-unit", amount = 1},
+            {type = "item", name = "advanced-processing-unit", amount = 2},
             {type = "item", name = "uranium-235", amount = 1, probability = 0.75},
             {type = "fluid", name = "hydrogen", amount = 30},
             {type = "fluid", name = "uranium-hexasulfide", amount = 10}
