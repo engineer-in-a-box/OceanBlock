@@ -474,6 +474,18 @@ data:extend({
         allow_productivity = true,
         allow_consumption = false,
         allow_pollution = false
+    },
+    {
+        type = "recipe",
+        name = "titanium-plate",
+        ingredients = {
+            {type = "item", name = "titanium-ore", amount = 3}
+        },
+        results = {
+            {type = "item", name = "titanium-plate", amount = 2}
+        },
+        energy_required = 9.6,
+        category = "smelting"
     }
 })
 
