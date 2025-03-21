@@ -64,7 +64,7 @@ technologies["landfill"].hidden = true
 
 table.insert(technologies["processing-unit"].effects, {type = "unlock-recipe", recipe = "advanced-processing-unit"})
 table.insert(technologies["processing-unit"].prerequisites, "titanium-processing")
-table.insert(technologies["robotics"].prerequisites, "processing-units")
+table.insert(technologies["robotics"].prerequisites, "processing-unit")
 
 data:extend({
     {
