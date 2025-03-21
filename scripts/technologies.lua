@@ -130,8 +130,8 @@ data:extend({
             {type = "change-recipe-productivity", recipe = "mineral-water-crystalization", change = 0.1},
             {type = "change-recipe-productivity", recipe = "slurry-filtering-1", change = 0.1},
             {type = "change-recipe-productivity", recipe = "slurry-filtering-2", change = 0.1},
-            {type = "change-recipe-productivity", recipe = "ferric-solution-filtering-2", change = 0.1},
-            {type = "change-recipe-productivity", recipe = "cupric-solution-filtering-2", change = 0.1}
+            {type = "change-recipe-productivity", recipe = "ferric-solution-filtering", change = 0.1},
+            {type = "change-recipe-productivity", recipe = "cupric-solution-filtering", change = 0.1}
         },
         icons = {
             {icon = "__base__/graphics/icons/iron-ore.png", shift = {-1, -0}, scale = 2},
@@ -164,8 +164,8 @@ data:extend({
             {type = "change-recipe-productivity", recipe = "mineral-water-crystalization", change = 0.1},
             {type = "change-recipe-productivity", recipe = "slurry-filtering-1", change = 0.1},
             {type = "change-recipe-productivity", recipe = "slurry-filtering-2", change = 0.1},
-            {type = "change-recipe-productivity", recipe = "ferric-solution-filtering-2", change = 0.1},
-            {type = "change-recipe-productivity", recipe = "cupric-solution-filtering-2", change = 0.1}
+            {type = "change-recipe-productivity", recipe = "ferric-solution-filtering", change = 0.1},
+            {type = "change-recipe-productivity", recipe = "cupric-solution-filtering", change = 0.1}
         },
         icons = {
             {icon = "__base__/graphics/icons/iron-ore.png", shift = {-1, -0}, scale = 2},
