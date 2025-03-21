@@ -564,7 +564,7 @@ recipes["flying-robot-frame"].ingredients = {
     {type = "item", name = "battery", amount = 2},
     {type = "item", name = "electronic-circuit", amount = 3},
     {type = "item", name = "electric-engine-unit", amount = 1},
-    {type = "item", name = "processing-unit", amount = 1},
+    {type = "item", name = "advanced-processing-unit", amount = 1},
     {type = "fluid", name = "nitric-acid", amount = 20}
 }
 recipes["flying-robot-frame"].results = {
