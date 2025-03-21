@@ -10,13 +10,9 @@ table.insert(data.raw["character"]["character"].crafting_categories, "oceanblock
 data.raw["furnace"]["flare-stack"].crafting_speed = 10
 
 -- autoplace
-data.raw["tile"]["landfill"].autoplace = {
-    probability_expression = "(x/16)^2 + (y/16)^2 + 1.5",
-    order = "z"
-}
 data.raw["tile"]["water"].autoplace = {
     probability_expression = "1",
-    order = "y"
+    order = "zzzzzz"
 }
 -- data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls = {
 --     ["water"] = {}
