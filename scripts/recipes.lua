@@ -498,7 +498,7 @@ data:extend({
             {type = "item", name = "titanium-powder", amount = 5}
         },
         energy_required = 4,
-        category = "crafting-with-fluid"
+        category = "chemistry"
     }
 })
 
