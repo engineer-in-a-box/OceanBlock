@@ -1,7 +1,3 @@
-local lab_2 = table.deepcopy(data.raw["item"]["lab"])
-lab_2.name = "lab-2"
-lab_2.place_result = "lab-2"
-
 data:extend({
     {
         type = "item",
@@ -65,8 +61,7 @@ data:extend({
         icon = "__oceanblock__/graphics/icons/titanium-plate.png",
         subgroup = "raw-material",
         order = "a[smelting]-d[titanium-plate]"
-    },
-    lab_2
+    }
 })
 
 local items = data.raw["item"]

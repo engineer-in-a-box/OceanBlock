@@ -1,8 +1,8 @@
 centrifuge_pipes = {
     north = {filename = "__core__/graphics/empty.png", size = 64},
-    west = {filename = "__oceanblock__/graphics/centrifuge/centrifuge-pipe-W.png", size = {39, 73}, scale = 0.5, shift = {0.79, 0.04}},
-    south = {filename = "__oceanblock__/graphics/centrifuge/centrifuge-pipe-S.png", size = {88, 61}, scale = 0.5, shift = {0, -1}},
-    east = {filename = "__oceanblock__/graphics/centrifuge/centrifuge-pipe-E.png", size = {42, 76}, scale = 0.5, shift = {-0.765, 0.04}}
+    west = {filename = "__oceanblock__/graphics/entity/centrifuge/centrifuge-pipe-W.png", size = {39, 73}, scale = 0.5, shift = {0.79, 0.04}},
+    south = {filename = "__oceanblock__/graphics/entity/centrifuge/centrifuge-pipe-S.png", size = {88, 61}, scale = 0.5, shift = {0, -1}},
+    east = {filename = "__oceanblock__/graphics/entity/centrifuge/centrifuge-pipe-E.png", size = {42, 76}, scale = 0.5, shift = {-0.765, 0.04}}
 }
 
 data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
@@ -52,16 +52,3 @@ data.raw["boiler"]["boiler"].energy_consumption = "5.4MW"
 data.raw["generator"]["steam-engine"].max_power_output = "2.7MW"
 data.raw["generator"]["steam-engine"].fluid_usage_per_tick = 1.5
 data.raw["underground-belt"]["express-underground-belt"].max_distance = 11
-
-local lab_2 = table.deepcopy(data.raw["lab"]["lab"])
-lab_2.name = "lab-2"
-lab_2.minable.result = "lab-2"
-
-data.raw["lab"]["lab"].inputs = {
-    "automation-science-pack",
-    "logistic-science-pack",
-    "military-science-pack",
-    "chemical-science-pack"
-}
-
-data:extend({lab_2})

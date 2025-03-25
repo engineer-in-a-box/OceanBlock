@@ -499,22 +499,6 @@ data:extend({
         },
         energy_required = 8,
         category = "chemistry"
-    },
-    {
-        type = "recipe",
-        name = "lab-2",
-        ingredients = {
-            {type = "item", name = "lab", amount = 2},
-            {type = "item", name = "titanium-plate", amount = 20},
-            {type = "item", name = "advanced-circuit", amount = 20},
-            {type = "item", name = "iron-gear-wheel", amount = 20},
-            {type = "fluid", name = "nitric-acid", amount = 50}
-        },
-        results = {
-            {type = "item", name = "lab-2", amount = 1}
-        },
-        energy_required = 5,
-        category = "crafting-with-fluid"
     }
 })
 
@@ -628,6 +612,12 @@ table.insert(recipes["rocket-part"].ingredients, {type = "item", name = "advance
 table.insert(recipes["atomic-bomb"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
 table.insert(recipes["power-armor-mk2"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
 table.insert(recipes["personal-roboport-mk2-equipment"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 5})
+
+recipes["low-density-structure"].ingredients = {
+    {type = "item", name = "titanium-plate", amount = 20},
+    {type = "item", name = "steel-plate", amount = 2},
+    {type = "item", name = "plastic-bar", amount = 5}
+}
 
 -- modules
 recipes["speed-module"].ingredients = {
