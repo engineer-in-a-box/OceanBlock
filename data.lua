@@ -3,7 +3,6 @@ require("scripts.fluids")
 require("scripts.items")
 require("scripts.entities")
 require("scripts.technologies")
-require("scripts.prototypes.quantum-computer")
 
 table.insert(data.raw["character"]["character"].crafting_categories, "oceanblock-handcrafting")
 
