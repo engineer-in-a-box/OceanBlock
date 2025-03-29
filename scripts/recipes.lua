@@ -127,6 +127,7 @@ data:extend({
         name = "filter-cleaning",
         ingredients = {
             {type = "item", name = "used-filter", amount = 1},
+            {type = "item", name = "coal", amount = 1},
             {type = "fluid", name = "water", amount = 50}
         },
         results = {
