@@ -46,6 +46,7 @@ data.raw["assembling-machine"]["centrifuge"].fluid_boxes = {
 data.raw["assembling-machine"]["centrifuge"].fluid_boxes_off_when_no_fluid_recipe = true
 data.raw["offshore-pump"]["offshore-pump"].pumping_speed = 80
 data.raw["assembling-machine"]["sg-greenhouse"].fixed_quality = "normal"
+data.raw["assembling-machine"]["sg-greenhouse"].fixed_recipe = "sg-grow-wood"
 
 data.raw["boiler"]["boiler"].energy_source.effectivity = 3
 data.raw["boiler"]["boiler"].energy_consumption = "5.4MW"
