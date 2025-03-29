@@ -340,7 +340,8 @@ data:extend({
         },
         results = {
             {type = "item", name = "landfill", amount = 5}
-        }
+        },
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -354,7 +355,8 @@ data:extend({
         },
         energy_required = 240,
         category = "centrifuging",
-        enabled = false
+        enabled = false,
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -369,7 +371,8 @@ data:extend({
         energy_required = 1,
         category = "chemistry",
         enabled = false,
-        subgroup = "fluid"
+        subgroup = "fluid",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -384,7 +387,8 @@ data:extend({
         energy_required = 1,
         category = "chemistry",
         enabled = false,
-        subgroup = "fluid"
+        subgroup = "fluid",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -399,7 +403,8 @@ data:extend({
         energy_required = 1,
         category = "chemistry",
         enabled = false,
-        subgroup = "fluid"
+        subgroup = "fluid",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -418,7 +423,8 @@ data:extend({
         main_product = "nitric-acid",
         enabled = false,
         subgroup = "fluid-recipes",
-        order = "d[fluid]-d-a"
+        order = "d[fluid]-d-a",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -449,7 +455,8 @@ data:extend({
         energy_required = 1,
         enabled = false,
         subgroup = "fluid-recipes",
-        order = "d[fluid]-c-c"
+        order = "d[fluid]-c-c",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -472,8 +479,7 @@ data:extend({
         main_product = "advanced-processing-unit",
         order = "b[circuits]-d[advanced-processing-unit]",
         allow_productivity = true,
-        allow_consumption = false,
-        allow_pollution = false
+        enabled = false
     },
     {
         type = "recipe",
@@ -485,7 +491,9 @@ data:extend({
             {type = "item", name = "titanium-plate", amount = 1}
         },
         energy_required = 16,
-        category = "smelting"
+        category = "smelting",
+        enabled = false,
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -498,7 +506,84 @@ data:extend({
             {type = "item", name = "titanium-powder", amount = 5}
         },
         energy_required = 8,
-        category = "chemistry"
+        category = "chemistry",
+        enabled = false,
+        allow_productivity = true
+    },
+    {
+        type = "recipe",
+        name = "titanium-filtering",
+        ingredients = {
+            {type = "fluid", name = "slurry", amount = 300},
+            {type = "item", name = "iron-stick", amount = 5},
+            {type = "item", name = "copper-cable", amount = 10},
+            {type = "item", name = "filter", amount = 10},
+            {type = "item", name = "sand", amount = 30}
+        },
+        results = {
+            {type = "item", name = "titanium-ore", amount = 2},
+            {type = "item", name = "used-filter", amount = 10, ignored_by_productivity = 10},
+            {type = "fluid", name = "water", amount = 500}
+        },
+        allow_productivity = true,
+        energy_required = 4,
+        category = "centrifuging",
+        main_product = "titanium-ore",
+        enabled = false,
+        crafting_machine_tint = {
+            primary = {0.36, 0.25, 0}
+        }
+    },
+    {
+        type = "recipe",
+        name = "titanium-iron-mixture",
+        ingredients = {
+            {type = "item", name = "titanium-powder", amount = 10},
+            {type = "item", name = "iron-ore", amount = 10},
+            {type = "fluid", name = "nitric-acid", amount = 5}
+        },
+        results = {
+            {type = "item", name = "titanium-iron-mixture", amount = 10}
+        },
+        energy_required = 8,
+        category = "chemistry",
+        allow_productivity = true,
+        enabled = false
+    },
+    {
+        type = "recipe",
+        name = "titansteel-plate",
+        ingredients = {
+            {type = "item", name = "titanium-iron-mixture", amount = 5}
+        },
+        results = {
+            {type = "item", name = "titansteel-plate", amount = 1}
+        },
+        energy_required = 16,
+        category = "smelting",
+        allow_productivity = true,
+        enabled = false
+    },
+    {
+        type = "recipe",
+        name = "low-density-structure-from-titansteel",
+        ingredients = {
+            {type = "item", name = "steel-plate", amount = 2},
+            {type = "item", name = "titansteel-plate", amount = 2},
+            {type = "item", name = "plastic-bar", amount = 10},
+            {type = "fluid", name = "nitric-acid", amount = 5}
+        },
+        results = {
+            {type = "item", name = "low-density-structure", amount = 1}
+        },
+        icons = {
+            {icon = "__base__/graphics/icons/low-density-structure.png", icon_size = 64},
+            {icon = "__oceanblock__/graphics/icons/titansteel-plate.png", scale = 0.25, shift = {-12, -12}}
+        },
+        energy_required = 10,
+        category = "crafting-with-fluid",
+        allow_productivity = true,
+        enabled = false
     }
 })
 
@@ -606,17 +691,39 @@ recipes["flare-stack"].ingredients = {
     {type = "item", name = "pipe", amount = 5}
 }
 
-table.insert(recipes["spidertron"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 4})
+table.insert(recipes["spidertron"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 16})
 table.insert(recipes["satellite"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
 table.insert(recipes["rocket-part"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
 table.insert(recipes["atomic-bomb"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
 table.insert(recipes["power-armor-mk2"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 10})
-table.insert(recipes["personal-roboport-mk2-equipment"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 5})
+table.insert(recipes["rocket-silo"].ingredients, {type = "item", name = "advanced-processing-unit", amount = 100})
 
 recipes["low-density-structure"].ingredients = {
     {type = "item", name = "titanium-plate", amount = 20},
     {type = "item", name = "steel-plate", amount = 2},
     {type = "item", name = "plastic-bar", amount = 5}
+}
+
+recipes["fission-reactor-equipment"].ingredients = {
+    {type = "item", name = "processing-unit", amount = 200},
+    {type = "item", name = "low-density-structure", amount = 50},
+    {type = "item", name = "uranium-fuel-cell", amount = 4},
+    {type = "item", name = "titansteel-plate", amount = 500}
+}
+
+recipes["battery-mk2-equipment"].ingredients = {
+    {type = "item", name = "processing-unit", amount = 15},
+    {type = "item", name = "low-density-structure", amount = 5},
+    {type = "item", name = "battery-equipment", amount = 10},
+    {type = "item", name = "titansteel-plate", amount = 20}
+}
+
+recipes["personal-roboport-mk2-equipment"].ingredients = {
+    {type = "item", name = "processing-unit", amount = 100},
+    {type = "item", name = "advanced-processing-unit", amount = 15},
+    {type = "item", name = "low-density-structure", amount = 20},
+    {type = "item", name = "personal-roboport-equipment", amount = 5},
+    {type = "item", name = "titansteel-plate", amount = 20}
 }
 
 -- modules

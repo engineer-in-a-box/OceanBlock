@@ -57,16 +57,32 @@ data:extend({
     {
         type = "item",
         name = "titanium-plate",
-        stack_size = 200,
+        stack_size = 100,
         icon = "__oceanblock__/graphics/icons/titanium-plate.png",
         subgroup = "raw-material",
         order = "a[smelting]-d[titanium-plate]"
+    },
+    {
+        type = "item",
+        name = "titansteel-plate",
+        stack_size = 100,
+        icon = "__oceanblock__/graphics/icons/titansteel-plate.png",
+        subgroup = "raw-material",
+        order = "a[smelting]-e[titansteel-plate]"
+    },
+    {
+        type = "item",
+        name = "titanium-iron-mixture",
+        stack_size = 200,
+        icon = "__oceanblock__/graphics/icons/titanium-iron-mixture.png",
+        subgroup = "raw-material",
+        order = "b[powder]-c[titanium-iron-mixture]"
     }
 })
 
 local items = data.raw["item"]
 
-items["uranium-fuel-cell"].fuel_value = "750GJ"
+items["uranium-fuel-cell"].fuel_value = "5PJ"
 items["uranium-fuel-cell"].stack_size = 200
 
 items["nuclear-fuel"].fuel_value = "50GJ"

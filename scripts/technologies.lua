@@ -41,6 +41,8 @@ table.insert(technologies["utility-science-pack"].prerequisites, "uranium-proces
 
 table.insert(technologies["speed-module-3"].prerequisites, "robotics")
 
+table.insert(technologies["low-density-structure"].effects, {type = "unlock-recipe", recipe = "low-density-structure-from-titansteel"})
+
 technologies["oil-gathering"].effects = nil
 
 technologies["oil-processing"].research_trigger = nil
@@ -64,6 +66,7 @@ technologies["landfill"].hidden = true
 
 table.insert(technologies["processing-unit"].effects, {type = "unlock-recipe", recipe = "advanced-processing-unit"})
 table.insert(technologies["processing-unit"].prerequisites, "titanium-processing")
+table.insert(technologies["low-density-structure"].prerequisites, "titanium-processing")
 table.insert(technologies["robotics"].prerequisites, "processing-unit")
 
 data:extend({
@@ -199,7 +202,10 @@ data:extend({
         name = "titanium-processing",
         effects = {
             {type = "unlock-recipe", recipe = "titanium-powder"},
-            {type = "unlock-recipe", recipe = "titanium-plate"}
+            {type = "unlock-recipe", recipe = "titanium-plate"},
+            {type = "unlock-recipe", recipe = "titanium-filtering"},
+            {type = "unlock-recipe", recipe = "titanium-iron-mixture"},
+            {type = "unlock-recipe", recipe = "titansteel-plate"}
         },
         icon = "__oceanblock__/graphics/icons/titanium-processing.png",
         icon_size = 256,
@@ -216,5 +222,38 @@ data:extend({
             "chemical-science-pack",
             "advanced-material-processing"
         }
+    },
+    {
+        type = "technology",
+        name = "titanium-productivity-1",
+        effects = {
+            {type = "change-recipe-productivity", recipe = "titanium-filtering", change = 0.1}
+        },
+        icons = {
+            {icon = "__oceanblock__/graphics/icons/titanium-ore.png", shift = {-1, -0}, scale = 2},
+            {
+              icon = "__core__/graphics/icons/technology/constants/constant-mining-productivity.png",
+              icon_size = 128,
+              scale = 0.5,
+              shift = {50, 50}
+            }
+        },
+        unit = {
+            ingredients = {
+                {"automation-science-pack", 1},
+                {"logistic-science-pack", 1},
+                {"chemical-science-pack", 1},
+                {"production-science-pack", 1},
+                {"utility-science-pack", 1}
+            },
+            time = 60,
+            count_formula = "5000*(L^2)"
+        },
+        prerequisites = {
+            "ore-productivity-3",
+            "titanium-processing",
+            "utility-science-pack"
+        },
+        max_level = "infinite"
     }
 })

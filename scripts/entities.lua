@@ -52,3 +52,5 @@ data.raw["boiler"]["boiler"].energy_consumption = "5.4MW"
 data.raw["generator"]["steam-engine"].max_power_output = "2.7MW"
 data.raw["generator"]["steam-engine"].fluid_usage_per_tick = 1.5
 data.raw["underground-belt"]["express-underground-belt"].max_distance = 11
+data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = 5.5
+data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = 13
