@@ -7,7 +7,7 @@ require("scripts.technologies")
 table.insert(data.raw["character"]["character"].crafting_categories, "oceanblock-handcrafting")
 
 -- entity modifications
-data.raw["furnace"]["flare-stack"].crafting_speed = 10
+data.raw["furnace"]["flare-stack"].crafting_speed = 20
 
 -- autoplace
 data.raw["tile"]["water"].autoplace = {
