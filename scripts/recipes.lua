@@ -584,7 +584,8 @@ data:extend({
         energy_required = 10,
         category = "crafting-with-fluid",
         allow_productivity = true,
-        enabled = false
+        enabled = false,
+        auto_recycle = false
     }
 })
 

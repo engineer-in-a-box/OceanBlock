@@ -4,6 +4,22 @@ require("scripts.items")
 require("scripts.entities")
 require("scripts.technologies")
 
+if mods["space-age"] then
+    require("scripts.space-age.aquilo")
+    require("scripts.space-age.fulgora")
+    require("scripts.space-age.gleba")
+    require("scripts.space-age.vulcanus")
+    data.raw["recipe"]["rocket-part"].ingredients = {
+        {type = "item", name = "processing-unit", amount = 2},
+        {type = "item", name = "advanced-processing-unit", amount = 1},
+        {type = "item", name = "rocket-fuel", amount = 2},
+        {type = "item", name = "low-density-structure", amount = 2}
+    }
+    data.raw["recipe"]["rocket-part"].results = {
+        {type = "item", name = "rocket-part", amount = 2}
+    }
+end
+
 table.insert(data.raw["character"]["character"].crafting_categories, "oceanblock-handcrafting")
 
 -- entity modifications
