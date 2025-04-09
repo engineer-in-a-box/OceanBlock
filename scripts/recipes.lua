@@ -645,7 +645,7 @@ recipes["advanced-circuit"].category = "crafting-with-fluid"
 recipes["advanced-circuit"].energy_required = 1.5
 
 recipes["centrifuge"].ingredients = {
-    {type = "item", name = "titanium-plate", amount = 10},
+    {type = "item", name = "steel-plate", amount = 25},
     {type = "item", name = "iron-gear-wheel", amount = 50},
     {type = "item", name = "advanced-circuit", amount = 50},
     {type = "item", name = "concrete", amount = 50}
