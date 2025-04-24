@@ -64,7 +64,9 @@ if not mods["space-age"] then
 end
 
 technologies["landfill"].hidden = true
-technologies["fish-breeding"].hidden = true
+if mods["space-age"] then
+    technologies["fish-breeding"].hidden = true
+end
 
 table.insert(technologies["processing-unit"].effects, {type = "unlock-recipe", recipe = "advanced-processing-unit"})
 table.insert(technologies["processing-unit"].prerequisites, "titanium-processing")
