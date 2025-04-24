@@ -124,6 +124,21 @@ data:extend({
         icon = "__oceanblock__/graphics/icons/casting-titansteel-plate.png",
         subgroup = "oceanblock-vulcanus",
         enabled = false
+    },
+    {
+        type = "recipe",
+        name = "calcite",
+        ingredients = {
+            {type = "fluid", name = "lava", amount = 500},
+            {type = "fluid", name = "nitric-acid", amount = 50}
+        },
+        results = {
+            {type = "item", name = "calcite", amount = 5}
+        },
+        energy_required = 4,
+        category = "metallurgy",
+        subgroup = "oceanblock-vulcanus",
+        enabled = false
     }
 })
 
