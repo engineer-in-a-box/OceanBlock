@@ -426,10 +426,7 @@ data:extend({
             {icon = "__Krastorio2Assets__/icons/fluids/oxygen.png", icon_size = 64, shift = {-8, 0}}
         },
         enabled = false,
-        subgroup = "oceanblock-fluid",
-        surface_conditions = {
-            {property = "pressure", min = 1000, max = 1000}
-        }
+        subgroup = "oceanblock-fluid"
     },
     {
         type = "recipe",
@@ -588,6 +585,9 @@ if mods["space-age"] then
     recipes["solid-fuel-from-ammonia"].ingredients = {
         {type = "fluid", name = "ammonia", amount = 15},
         {type = "fluid", name = "petroleum-gas", amount = 6}
+    }
+    recipes["air-separation"].surface_conditions = {
+        {property = "pressure", min = 1000, max = 1000}
     }
 end
 
