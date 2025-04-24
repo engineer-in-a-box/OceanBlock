@@ -1,0 +1,9 @@
+{
+    "recipe":
+    [
+        ["titanium-filtering", "titanium-ore"],
+        ["stone-crushing", "sand"],
+        ["sand-dissolving", "slurry"],
+        ["sand-centrifuging", "uranium-ore"]
+    ]
+}

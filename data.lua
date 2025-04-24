@@ -1,14 +1,34 @@
-require("scripts.recipes")
-require("scripts.fluids")
-require("scripts.items")
-require("scripts.entities")
-require("scripts.technologies")
+meld = require("meld")
+
+local function require_folder(folder, filenames)
+    for _, filename in pairs(filenames) do
+        require(folder .. "." .. filename)
+    end
+end
+
+require_folder("prototypes", {"recipes", "fluids", "items", "entities", "technologies"})
+
+data.raw["map-gen-presets"]["default"]["oceanblock-default"] = {
+    order = "0",
+    basic_settings = {
+        autoplace_controls = {
+            ["iron-ore"] = {size = 0},
+            ["copper-ore"] = {size = 0},
+            ["stone"] = {size = 0},
+            ["coal"] = {size = 0},
+            ["crude-oil"] = {size = 0},
+            ["uranium-ore"] = {size = 0}
+        },
+        no_enemies_mode = true
+    }
+}
 
 if mods["space-age"] then
-    require("scripts.space-age.aquilo")
-    require("scripts.space-age.fulgora")
-    require("scripts.space-age.gleba")
-    require("scripts.space-age.vulcanus")
+    -- planets
+    require_folder("prototypes.space-age.planets.aquilo", {"recipes", "technologies"})
+    require_folder("prototypes.space-age.planets.fulgora", {"recipes", "technologies"})
+    require_folder("prototypes.space-age.planets.vulcanus", {"vulcanus", "recipes", "technologies", "items"})
+    -- other stuff
     data.raw["recipe"]["rocket-part"].ingredients = {
         {type = "item", name = "processing-unit", amount = 2},
         {type = "item", name = "advanced-processing-unit", amount = 1},
@@ -18,6 +38,28 @@ if mods["space-age"] then
     data.raw["recipe"]["rocket-part"].results = {
         {type = "item", name = "rocket-part", amount = 2}
     }
+    grow_wood = table.deepcopy(data.raw["recipe"]["sg-grow-wood"])
+    grow_wood.name = "grow-wood-with-atmosphere"
+    grow_wood.ingredients = {
+        {type = "item", name = "sg-sapling", amount = 10},
+        {type = "item", name = "carbon", amount = 10},
+        {type = "fluid", name = "oxygen", amount = 1200}
+    }
+    data:extend({grow_wood})
+    data.raw["recipe"]["sg-grow-wood"].surface_conditions = {
+        {property = "pressure", min = 1000, max = 1000}
+    }
+    meld(data.raw["map-gen-presets"]["default"]["oceanblock-default"].basic_settings.autoplace_controls, {
+        ["aquilo_crude_oil"] = {size = 0},
+        ["calcite"] = {size = 0},
+        ["fluorine_vent"] = {size = 0},
+        ["gleba_stone"] = {size = 0},
+        ["lithium_brine"] = {size = 0},
+        ["scrap"] = {size = 0},
+        ["sulfuric_acid_geyser"] = {size = 0},
+        ["tungsten_ore"] = {size = 0},
+        ["vulcanus_coal"] = {size = 0}
+    })
 end
 
 table.insert(data.raw["character"]["character"].crafting_categories, "oceanblock-handcrafting")
