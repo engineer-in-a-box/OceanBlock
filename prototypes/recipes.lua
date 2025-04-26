@@ -823,9 +823,12 @@ recipes["efficiency-module-3"].category = "crafting-with-fluid"
 recipes["productivity-module"].category = "crafting-with-fluid"
 recipes["productivity-module-2"].category = "crafting-with-fluid"
 recipes["productivity-module-3"].category = "crafting-with-fluid"
-recipes["quality-module"].category = "crafting-with-fluid"
-recipes["quality-module-2"].category = "crafting-with-fluid"
-recipes["quality-module-3"].category = "crafting-with-fluid"
+
+if mods["space-age"] then
+    recipes["quality-module"].category = "crafting-with-fluid"
+    recipes["quality-module-2"].category = "crafting-with-fluid"
+    recipes["quality-module-3"].category = "crafting-with-fluid"
+end
 
 -- belts
 recipes["fast-transport-belt"].ingredients = {
