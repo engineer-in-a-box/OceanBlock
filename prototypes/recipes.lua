@@ -332,13 +332,13 @@ data:extend({
         type = "recipe",
         name = "uranium-ore",
         ingredients = {
-            {type = "item", name = "sand", amount = 2000},
-            {type = "fluid", name = "water", amount = 32000}
+            {type = "item", name = "sand", amount = 800},
+            {type = "fluid", name = "water", amount = 3000}
         },
         results = {
             {type = "item", name = "uranium-ore", amount = 1}
         },
-        energy_required = 240,
+        energy_required = 24,
         category = "centrifuging",
         enabled = false,
         allow_productivity = true
