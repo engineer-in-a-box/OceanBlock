@@ -7,6 +7,9 @@ local function require_folder(folder, filenames)
 end
 
 require_folder("prototypes", {"recipes", "fluids", "items", "entities", "technologies"})
+if mods["Age-of-Production"] then
+    require_folder("prototypes.compat.Age-of-Production", {"recipes"})
+end
 
 data.raw["map-gen-presets"]["default"]["oceanblock-default"] = {
     order = "0",
