@@ -363,7 +363,7 @@ data:extend({
         type = "recipe",
         name = "ferric-solution",
         ingredients = {
-            {type = "item", name = "iron-ore", amount = 15},
+            {type = "item", name = "iron-ore", amount = 50},
             {type = "fluid", name = "mineral-water", amount = 100}
         },
         results = {
@@ -372,14 +372,13 @@ data:extend({
         energy_required = 1,
         category = "chemistry",
         enabled = false,
-        subgroup = "oceanblock-fluid",
-        allow_productivity = true
+        subgroup = "oceanblock-fluid"
     },
     {
         type = "recipe",
         name = "cupric-solution",
         ingredients = {
-            {type = "item", name = "copper-ore", amount = 15},
+            {type = "item", name = "copper-ore", amount = 50},
             {type = "fluid", name = "mineral-water", amount = 100}
         },
         results = {
@@ -388,8 +387,7 @@ data:extend({
         energy_required = 1,
         category = "chemistry",
         enabled = false,
-        subgroup = "oceanblock-fluid",
-        allow_productivity = true
+        subgroup = "oceanblock-fluid"
     },
     {
         type = "recipe",
