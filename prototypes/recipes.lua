@@ -747,6 +747,10 @@ if mods["space-age"] then
         {type = "item", name = "quality-module", amount = 5},
         {type = "fluid", name = "nitric-acid", amount = 40}
     }
+
+    recipes["quality-module"].category = "crafting-with-fluid"
+    recipes["quality-module-2"].category = "crafting-with-fluid"
+    recipes["quality-module-3"].category = "crafting-with-fluid"
 else
     recipes["speed-module-3"].ingredients = {
         {type = "item", name = "advanced-circuit", amount = 5},
@@ -821,9 +825,6 @@ recipes["efficiency-module-3"].category = "crafting-with-fluid"
 recipes["productivity-module"].category = "crafting-with-fluid"
 recipes["productivity-module-2"].category = "crafting-with-fluid"
 recipes["productivity-module-3"].category = "crafting-with-fluid"
-recipes["quality-module"].category = "crafting-with-fluid"
-recipes["quality-module-2"].category = "crafting-with-fluid"
-recipes["quality-module-3"].category = "crafting-with-fluid"
 
 -- belts
 recipes["fast-transport-belt"].ingredients = {
