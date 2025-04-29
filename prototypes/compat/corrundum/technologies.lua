@@ -1,0 +1,2 @@
+data.raw["technology"]["chalcopyrite-processing"].research_trigger = {type = "mine-entity", entity = "huge-corrundum-rock"}
+data.raw["technology"]["platinum-processing"].research_trigger = {type = "mine-entity", entity = "huge-corrundum-rock"}
