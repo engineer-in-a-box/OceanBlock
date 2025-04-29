@@ -1,5 +1,3 @@
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fmods.factorio.com%2Fapi%2Fmods%2Foceanblock&query=%24.downloads_count&label=Downloads)
-
 ### Credits
 
 #### Titanium assets
