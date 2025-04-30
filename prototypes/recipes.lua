@@ -734,7 +734,7 @@ recipes["personal-roboport-mk2-equipment"].ingredients = {
 }
 
 -- modules
-if mods["space-age"] then
+if mods["quality"] then
     recipes["quality-module"].ingredients = {
         {type = "item", name = "electronic-circuit", amount = 5},
         {type = "item", name = "advanced-circuit", amount = 5},
@@ -748,33 +748,16 @@ if mods["space-age"] then
         {type = "fluid", name = "nitric-acid", amount = 40}
     }
 
-    recipes["quality-module"].category = "crafting-with-fluid"
-    recipes["quality-module-2"].category = "crafting-with-fluid"
-    recipes["quality-module-3"].category = "crafting-with-fluid"
-else
-    recipes["speed-module-3"].ingredients = {
-        {type = "item", name = "advanced-circuit", amount = 5},
-        {type = "item", name = "advanced-processing-unit", amount = 2},
-        {type = "item", name = "speed-module-2", amount = 5},
-        {type = "item", name = "flying-robot-frame", amount = 2},
-        {type = "fluid", name = "nitric-acid", amount = 40}
-    }
-
-    recipes["efficiency-module-3"].ingredients = {
-        {type = "item", name = "advanced-circuit", amount = 5},
-        {type = "item", name = "advanced-processing-unit", amount = 2},
-        {type = "item", name = "efficiency-module-2", amount = 5},
-        {type = "item", name = "uranium-238", amount = 1},
-        {type = "fluid", name = "nitric-acid", amount = 40}
-    }
-
-    recipes["productivity-module-3"].ingredients = {
+    recipes["quality-module-3"].ingredients = {
         {type = "item", name = "advanced-circuit", amount = 5},
         {type = "item", name = "advanced-processing-unit", amount = 2},
         {type = "item", name = "productivity-module-2", amount = 5},
-        {type = "item", name = "heat-pipe", amount = 2},
         {type = "fluid", name = "nitric-acid", amount = 40}
     }
+
+    recipes["quality-module"].category = "crafting-with-fluid"
+    recipes["quality-module-2"].category = "crafting-with-fluid"
+    recipes["quality-module-3"].category = "crafting-with-fluid"
 end
 
 recipes["speed-module"].ingredients = {
@@ -787,6 +770,13 @@ recipes["speed-module-2"].ingredients = {
     {type = "item", name = "advanced-circuit", amount = 5},
     {type = "item", name = "processing-unit", amount = 5},
     {type = "item", name = "speed-module", amount = 5},
+    {type = "fluid", name = "nitric-acid", amount = 40}
+}
+
+recipes["speed-module-3"].ingredients = {
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
+    {type = "item", name = "speed-module-2", amount = 5},
     {type = "fluid", name = "nitric-acid", amount = 40}
 }
 
@@ -803,6 +793,13 @@ recipes["efficiency-module-2"].ingredients = {
     {type = "fluid", name = "nitric-acid", amount = 40}
 }
 
+recipes["efficiency-module-3"].ingredients = {
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
+    {type = "item", name = "efficiency-module-2", amount = 5},
+    {type = "fluid", name = "nitric-acid", amount = 40}
+}
+
 recipes["productivity-module"].ingredients = {
     {type = "item", name = "electronic-circuit", amount = 5},
     {type = "item", name = "advanced-circuit", amount = 5},
@@ -813,6 +810,13 @@ recipes["productivity-module-2"].ingredients = {
     {type = "item", name = "advanced-circuit", amount = 5},
     {type = "item", name = "processing-unit", amount = 5},
     {type = "item", name = "productivity-module", amount = 5},
+    {type = "fluid", name = "nitric-acid", amount = 40}
+}
+
+recipes["productivity-module-3"].ingredients = {
+    {type = "item", name = "advanced-circuit", amount = 5},
+    {type = "item", name = "advanced-processing-unit", amount = 2},
+    {type = "item", name = "productivity-module-2", amount = 5},
     {type = "fluid", name = "nitric-acid", amount = 40}
 }
 
