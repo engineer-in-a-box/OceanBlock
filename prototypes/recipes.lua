@@ -751,7 +751,7 @@ if mods["quality"] then
     recipes["quality-module-3"].ingredients = {
         {type = "item", name = "advanced-circuit", amount = 5},
         {type = "item", name = "advanced-processing-unit", amount = 2},
-        {type = "item", name = "productivity-module-2", amount = 5},
+        {type = "item", name = "quality-module-2", amount = 5},
         {type = "fluid", name = "nitric-acid", amount = 40}
     }
 
@@ -819,6 +819,40 @@ recipes["productivity-module-3"].ingredients = {
     {type = "item", name = "productivity-module-2", amount = 5},
     {type = "fluid", name = "nitric-acid", amount = 40}
 }
+
+if mods["space-age"] then
+    recipes["speed-module-3"].ingredients = {
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "advanced-processing-unit", amount = 2},
+        {type = "item", name = "speed-module-2", amount = 5},
+        {type = "item", name = "tungsten-carbide", amount = 1},
+        {type = "fluid", name = "nitric-acid", amount = 40}
+    }
+
+    recipes["efficiency-module-3"].ingredients = {
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "advanced-processing-unit", amount = 2},
+        {type = "item", name = "efficiency-module-2", amount = 5},
+        {type = "item", name = "spoilage", amount = 5},
+        {type = "fluid", name = "nitric-acid", amount = 40}
+    }
+
+    recipes["productivity-module-3"].ingredients = {
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "advanced-processing-unit", amount = 2},
+        {type = "item", name = "productivity-module-2", amount = 5},
+        {type = "item", name = "biter-egg", amount = 1},
+        {type = "fluid", name = "nitric-acid", amount = 40}
+    }
+
+    recipes["quality-module-3"].ingredients = {
+        {type = "item", name = "advanced-circuit", amount = 5},
+        {type = "item", name = "advanced-processing-unit", amount = 2},
+        {type = "item", name = "quality-module-2", amount = 5},
+        {type = "item", name = "superconductor", amount = 1},
+        {type = "fluid", name = "nitric-acid", amount = 40}
+    }
+end
 
 recipes["speed-module"].category = "crafting-with-fluid"
 recipes["speed-module-2"].category = "crafting-with-fluid"
