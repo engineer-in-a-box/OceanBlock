@@ -36,6 +36,20 @@ data:extend({
         energy_required = 4,
         category = "metallurgy",
         subgroup = "oceanblock-vulcanus"
+    },
+    {
+        type = "recipe",
+        name = "alternate-nitric-acid",
+        ingredients = {
+            {type = "fluid", name = "hydrogen", amount = 50},
+            {type = "fluid", name = "oxygen", amount = 150},
+            {type = "fluid", name = "nitrogen", amount = 50}
+        },
+        results = {
+            {type = "fluid", name = "nitric-acid", amount = 100}
+        },
+        energy_required = 2,
+        category = "catalytic-chemistry"
     }
 })
 
