@@ -21,6 +21,59 @@ data:extend({
         crafting_machine_tint = {
             primary = {0.36, 0.25, 0}
         }
+    },
+    {
+        type = "recipe",
+        name = "stone-melting",
+        ingredients = {
+            {type = "item", name = "stone", amount = 100},
+            {type = "item", name = "calcite", amount = 1}
+        },
+        results = {
+            {type = "fluid", name = "lava", amount = 500}
+        },
+        allow_productivity = true,
+        energy_required = 4,
+        category = "metallurgy",
+        subgroup = "oceanblock-vulcanus"
+    },
+    {
+        type = "recipe",
+        name = "hydrogen-sulfide-seperation",
+        ingredients = {
+            {type = "fluid", name = "hydrogen-sulfide", amount = 100}
+        },
+        results = {
+            {type = "item", name = "sulfur", amount = 1},
+            {type = "fluid", name = "hydrogen", amount = 100}
+        },
+        energy_required = 5,
+        category = "catalytic-chemisty",
+        subgroup = "sulfur",
+        icons = {
+            {icon = "__oceanblock__/graphics/icons/recycling.png"},
+            {icon = data.raw["fluid"]["hydrogen-sulfide"].icon},
+            {icon = "__oceanblock__/graphics/icons/recycling-top.png"}
+        }
+    },
+    {
+        type = "recipe",
+        name = "carbon-dioxide-seperation",
+        ingredients = {
+            {type = "fluid", name = "carbon-dioxide", amount = 100}
+        },
+        results = {
+            {type = "item", name = "carbon", amount = 5},
+            {type = "fluid", name = "oxygen", amount = 100}
+        },
+        energy_required = 5,
+        category = "catalytic-chemisty",
+        subgroup = "sulfur",
+        icons = {
+            {icon = "__oceanblock__/graphics/icons/recycling.png"},
+            {icon = data.raw["fluid"]["carbon-dioxide"].icon},
+            {icon = "__oceanblock__/graphics/icons/recycling-top.png"}
+        }
     }
 })
 
