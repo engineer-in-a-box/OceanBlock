@@ -1,8 +1,12 @@
 meld = require("meld")
 
 local function require_folder(folder, filenames)
-    for _, filename in pairs(filenames) do
-        require(folder .. "." .. filename)
+    for k, m in pairs(filenames) do
+        if type(m) == "string" then
+            require(folder .. "." .. m)
+        elseif type(m) == "table" then
+            require_folder(k, m)
+        end
     end
 end
 
@@ -27,9 +31,11 @@ data.raw["map-gen-presets"]["default"]["oceanblock-default"] = {
 
 if mods["space-age"] then
     -- planets
-    require_folder("prototypes.space-age.planets.aquilo", {"recipes", "technologies"})
-    require_folder("prototypes.space-age.planets.fulgora", {"recipes", "technologies"})
-    require_folder("prototypes.space-age.planets.vulcanus", {"vulcanus", "recipes", "technologies", "items"})
+    require_folder("prototypes.space-age.planets", {
+        ["aquilo"] = {"recipes", "technologies"},
+        ["fulgora"] = {"recipes", "technologies"},
+        ["vulcanus"] = {"vulcanus", "recipes", "technologies", "items"}
+    })
     -- other stuff
     data.raw["recipe"]["rocket-part"].ingredients = {
         {type = "item", name = "processing-unit", amount = 2},
